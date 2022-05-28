@@ -1,18 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900|Roboto:300&display=swap&subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/components.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/header-page.css">
-	<link rel="stylesheet" type="text/css" href="css/section-top.css">
-	<link rel="stylesheet" type="text/css" href="css/section-about.css">
-	<link rel="stylesheet" type="text/css" href="css/section-contacts.css">
-	<link rel="stylesheet" type="text/css" href="css/footer-page.css">
-	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/normalize.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/components.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/header-page.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/section-top.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/section-about.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/section-contacts.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/footer-page.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main/css/popup.css' %}">
 
 	<title></title>
 </head>
@@ -23,7 +24,7 @@
 	<div class="container header-page__container">
 		<div class="header-page__start">
 			<div class="logo">
-				<img class="logo__img" src="img/common/logo.svg" alt="" width="150" height="43">
+				<img class="logo__img" src="{% static 'main/img/common/logo.svg' %}" alt="" width="150" height="43">
 			</div>
 		</div>
 		<div class="header-page__end">
