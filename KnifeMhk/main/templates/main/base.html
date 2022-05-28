@@ -105,17 +105,20 @@
 
 
 		<div class="catalog">
-			<div class="catalog__item" data-category="mushrooms">
+
+<!-- types   1.mushrooms 2.meat 3.cheese -->
+
+
+			 <div class="catalog__item" data-category="{{ post.type.title }}">
 				<div class="product catalog__product">
-					<img src="img/section-catalog/Складной2.jpg" alt="" class="product__img">
+					<img src="{{ post.img.url }}" alt="" class="product__img">
 					<div class="product__content">
-						<h3 class="product__title">Нож складной Нуc  </h3>
-						<p class="product__description">Клинок изготовлен из стали D2, с пятой, обработка поверхности клинка сатинированиее, однолезвейный, с двумя подшипниками для инерционного извлечения клинка.</p>
-					</div>
+						<h3 class="product__title">{{ post.title }}</h3>
+						<p class="product__description">{{ post.description }}</div>
 					<footer class="product__footer">
 						<div class="product__bottom">
 							<div class="product__price">
-								<span class="product__price-value">4 130</span>
+								<span class="product__price-value">{{ post.price }}</span>
 								<span class="product__currency">&#8381;</span>
 							</div>
 							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
@@ -123,316 +126,7 @@
 					</footer>
 				</div>
 			</div>
-			<div class="catalog__item" data-category="mushrooms">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Складной4.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Нож складной Байкер</h3>
-						<p class="product__description">Клиновая заточка в основном предназначена для лучшего проникновения внутрь разрезаемого материала, но также выдерживает высокие нагрузки при ударах, и нагрузки «на излом». </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">4 130</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			<div class="catalog__item" data-category="mushrooms">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Складной1.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Нож складной Стерх</h3>
-						<p class="product__description">Нож складной Стерх сталь Х12МФ Клиновая заточка в основном предназначена для лучшего проникновения внутрь разрезаемого материала, но также выдерживает высокие нагрузки при ударах, и нагрузки «на излом».</p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">4 158</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			<div class="catalog__item" data-category="mushrooms">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Складной3.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Нож складной Ирбис</h3>
-						<p class="product__description">Нож складной Ирбис сталь Дамаск рукоять серебро 
-						Кубачи глубокая резьба </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">30 800</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			<div class="catalog__item" data-category="mushrooms">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Складной10.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Нож складной КО</h3>
-						<p class="product__description">Данная конструкция позволяет быстро и эффектно раскрыть клинок, словно он оснащён пружинным механизмом.</p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">3 234</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			<div class="catalog__item" data-category="mushrooms">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Складной8.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Нож складной НСК</h3>
-						<p class="product__description"> В процессе доработки складного ножа НСК-4, преследуя цель сделать более современный внешний вид, как это обычно и бывает, вышла новая модель.</p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">1 148</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			<div class="catalog__item" data-category="meat">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Охотничьи1.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Охотничий нож </h3>
-						<p class="product__description">Нож КО-1 представляет собой охотничий кинжал, 
-						предназначенный для поражения и добивания зверя. </p>
-					</div>
-		 
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">3 766</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			<div class="catalog__item" data-category="meat">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Охотничьи2.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Витязь-Т</h3>
-						<p class="product__description">Охотничий нож ВИТЯЗЬ, благодаря своим отличным 
-						характеристикам нож можно использовать как многофункциональный инструмент. </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">5 754 </span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			<div class="catalog__item" data-category="meat">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Охотничьи5.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Охотничий нож Сталкер</h3>
-						<p class="product__description">Охотничий нож "Сталкер" относится к гражданскому холодному оружию и может быть использован в качестве боевого ножа благодаря своей конструкции и техническим характеристикам.
-						 </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">3 892</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="meat">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Охотничьи8.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Коготь сталь Х12МФ </h3>
-						<p class="product__description">Клинок типа боуи. Такие клинки проверены временем, и удобны не только для обычных действий охотника, но и для выполнения различных хозяйственно-бытовых задач. </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">4 130</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="meat">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Охотничьи9.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Тайфун сталь 65Г</h3>
-						<p class="product__description">Мачете Тайфун, после снятия с производства предыдущих моделей мачете, наш завод подошёл к вопросу изготовления подобных клинков с другого ракурса. </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">4 158</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="meat">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Охотничьи8.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Цербер чёрный</h3>
-						<p class="product__description">Нож "Цербер" - плод долгих попыток создать тактический нож, который соответствует современным условиям использования. </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">4 018</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="cheese">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Кухонный3.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Вепрь с ножнами</h3>
-						<p class="product__description">Топорик «Вепрь» относится к ножам хозяйственно-бытового назначения, холодным оружием не является. Предназначен топорик в первую очередь для разделки мяса, выполняет функции кухонного топорика. </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">4 130</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="cheese">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Кухонный5.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Кухонный набор Квартет </h3>
-						<p class="product__description">Кухонный набор «Квартет» - отличный подарок для тех, кто со всей серьезностью подходит к вопросам приготовления качественных блюд. </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">5 152</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="cheese">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Кухонные1.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Кухонный  нож </h3>
-						<p class="product__description">Нож станет Вашим помощником не только в быту, но и в туристических поездках.Эргономичная рукоять имеет удобный выступ под палец, что придает дополнительную уверенность при работе с ножом. </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">1 484</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="cheese">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Кухонный4.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Кухонный набор</h3>
-						<p class="product__description">Кухонный набор из трёх ножей "Тройка"  Клиновая заточка в основном предназначена для лучшего проникновения внутрь разрезаемого материала.</p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">3 696</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="cheese">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Кухонные5.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Кухонный набор Веста</h3>
-						<p class="product__description">Кухонный набор "Веста" включает в себя два универсальных ножа.  </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">2 352</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
-			 <div class="catalog__item" data-category="cheese">
-				<div class="product catalog__product">
-					<img src="img/section-catalog/Кухонный2.jpg" alt="" class="product__img">
-					<div class="product__content">
-						<h3 class="product__title">Кухонный набор Дуэт</h3>
-						<p class="product__description">Кухонный набор "Дуэт" - отличный подарок для тех, кто со всей серьёзностью подходит к вопросам приготовления качественных блюд. </p>
-					</div>
-					<footer class="product__footer">
-						<div class="product__bottom">
-							<div class="product__price">
-								<span class="product__price-value">4 130</span>
-								<span class="product__currency">&#8381;</span>
-							</div>
-							<button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
-						</div>
-					</footer>
-				</div>
-			</div>
+
 		</div>
 	</div>
 </section>
@@ -644,12 +338,12 @@
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
 
- <script src="js/myLib.js"></script>
-	<script src="js/header.js"></script>
-	<script src="js/popup.js"></script>
-	<script src="js/scrollTo.js"></script>
-	<script src="js/catalog.js"></script>
-	<script src="js/product.js"></script>
-	<script src="js/map.js"></script>
+ <script src="{% static 'main/js/myLib.js' %}"></script>
+	<script src="{% static 'main/js/header.js' %}"></script>
+	<script src="{% static 'main/js/popup.js' %}"></script>
+	<script src="{% static 'main/js/scrollTo.js' %}"></script>
+	<script src="{% static 'main/js/catalog.js' %}"></script>
+	<script src="{% static 'main/js/product.js' %}"></script>
+	<script src="{% static 'main/js/map.js' %}"></script>
 </body>
 </html>
