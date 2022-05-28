@@ -11,3 +11,5 @@ class Knife(models.Model):
 class Type(models.Model):
     slug = models.CharField( max_length=50)
     title = models.CharField("Название" ,max_length=50)
+    def __str__(self):
+        return self.title
