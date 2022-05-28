@@ -108,8 +108,8 @@
 
 <!-- types   1.mushrooms 2.meat 3.cheese -->
 
-
-			 <div class="catalog__item" data-category="{{ post.type.title }}">
+{% for post in posts %}
+			 <div class="catalog__item" data-category="{{ post.type_id.slug }}">
 				<div class="product catalog__product">
 					<img src="{{ post.img.url }}" alt="" class="product__img">
 					<div class="product__content">
@@ -126,7 +126,7 @@
 					</footer>
 				</div>
 			</div>
-
+{% endfor %}
 		</div>
 	</div>
 </section>

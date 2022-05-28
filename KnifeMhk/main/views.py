@@ -1,5 +1,7 @@
 from django.shortcuts import render
-
+from .models import *
 # Create your views here.
 def base(request):
-    return render(request, 'main/base.html')
+
+    posts = Knife.objects.all()
+    return render(request, 'main/base.html' , context={'posts':posts})
