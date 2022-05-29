@@ -291,16 +291,16 @@
 						<span class="order-product-price" >4130</span> &#8381;
 					</h3>
 					<form class="form">
-						<input class="order-info-title" type="hidden" name="пицца">
+						<input class="order-info-title" type="hidden" name="пицца" >
 						<input class="order-info-price" type="hidden" name="цена">
-						<input class="form__input" type="text" name="имя" placeholder="Имя" required>
-						<input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
-						<input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
-						<select class="form__input" name="оплата">
+						<input class="form__input" type="text" name="имя" id="name" placeholder="Имя" required>
+						<input class="form__input" type="text" name="телефон"  id="phone" placeholder="Телефон" required>
+						<input class="form__input" type="text" name="адрес" id="adress" placeholder="Адрес" required>
+						<select class="form__input" name="оплата" disabled>
 							<option value="Оплата наличными">Оплата наличными</option>
 							<option value="Оплата картой">Оплата картой</option>
 						</select>
-						<button class="btn form__btn" type="submit">Отправить</button>
+						<button class="btn form__btn" type="submit" onclick="clickBtn()" >Отправить</button>
 					</form>
 				</div>
 			</div>
@@ -345,5 +345,6 @@
 	<script src="{% static 'main/js/catalog.js' %}"></script>
 	<script src="{% static 'main/js/product.js' %}"></script>
 	<script src="{% static 'main/js/map.js' %}"></script>
+	<script src="{% static 'main/js/order.js' %}"></script>
 </body>
 </html>
