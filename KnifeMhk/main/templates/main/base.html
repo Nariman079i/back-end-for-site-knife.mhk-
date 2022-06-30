@@ -90,15 +90,11 @@
 					<li class="catalog-nav__item">
 						<button class="catalog-nav__btn is-active" type="button" data-filter="all">все</button> 
 					</li>
+					{% for i in types %}
 					<li class="catalog-nav__item">
-						<button class="catalog-nav__btn" type="button"  data-filter="mushrooms">Складные ножи</button>
+						<button class="catalog-nav__btn" type="button"  data-filter="{{ i.slug }}">{{ i.title }}</button>
 					</li>
-					<li class="catalog-nav__item">
-						<button class="catalog-nav__btn" type="button"  data-filter="meat">Охотничьи ножи</button>
-					</li>
-					<li class="catalog-nav__item">
-						<button class="catalog-nav__btn" type="button"  data-filter="cheese">Кухонные ножи</button>
-					</li>
+					{% endfor %}
 				</ul>
 			</nav >
 		</header>
